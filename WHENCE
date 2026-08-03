@@ -1,10 +1,11 @@
-**********
+             **********
              * WHENCE *
              **********
 
 This file attempts to document the origin and licensing information,
 if known, for each piece of firmware distributed for use with the Linux
 kernel.
+--------------------------------------------------------------------------
 
 Driver: BCM-0bb4-0306 - Cypress Bluetooth firmware for HTC Vive
 
@@ -189,9 +190,31 @@ Licence: Free software. See LICENCE.open-ath9k-htc-firmware for details
 
 Driver: libertas - Marvell Libertas fullmac-type 802.11b/g cards
 
+File: libertas/cf8381.bin
+File: libertas/cf8381_helper.bin
+File: libertas/cf8385.bin
+File: libertas/cf8385_helper.bin
+File: libertas/gspi8682.bin
+File: libertas/gspi8682_helper.bin
+File: libertas/gspi8686_v9.bin
+File: libertas/gspi8686_v9_helper.bin
+File: libertas/gspi8688.bin
+File: libertas/gspi8688_helper.bin
+File: libertas/sd8385.bin
+File: libertas/sd8385_helper.bin
+File: libertas/sd8682.bin
+File: libertas/sd8682_helper.bin
+File: libertas/sd8686_v8.bin
+File: libertas/sd8686_v8_helper.bin
+File: libertas/sd8686_v9.bin
+File: libertas/sd8686_v9_helper.bin
 File: libertas/usb8388_v5.bin
 File: libertas/usb8388_v9.bin
 File: libertas/usb8682.bin
+File: mrvl/sd8688.bin
+Link: libertas/sd8688.bin -> ../mrvl/sd8688.bin
+File: mrvl/sd8688_helper.bin
+Link: libertas/sd8688_helper.bin -> ../mrvl/sd8688_helper.bin
 
 Licence: Redistributable. See LICENCE.Marvell for details.
 
@@ -202,6 +225,8 @@ Extracted from Linux driver tarballs downloaded from Marvell's
 
 Driver: libertas - Marvell Libertas 802.11b/g cards, OLPC firmware
 
+File: libertas/lbtf_sdio.bin
+Version: 9.0.7.p4
 
 File: lbtf_usb.bin
 Version: 5.132.3.p1
@@ -216,33 +241,53 @@ Available from http://dev.laptop.org/pub/firmware/libertas/
 
 Driver: mwifiex - Marvell Wi-Fi fullmac-type 802.11n/ac cards
 
+File: mrvl/sd8787_uapsta.bin
+Version: W14.68.35.p66
 
 File: mrvl/usb8766_uapsta.bin
 Version: 14.68.22.p16
 
+File: mrvl/sd8797_uapsta.bin
+Version: W14.68.29.p59
 
 File: mrvl/usb8797_uapsta.bin
 Version: W14.68.29.p60
 
+File: mrvl/sd8897_uapsta.bin
+Version: W15.68.19.17
 
 File: mrvl/usb8897_uapsta.bin
 Version: 15.68.4.p103
 
+File: mrvl/pcie8897_uapsta.bin
+Version: W15.68.19.p21
 
+File: mrvl/sd8887_uapsta.bin
+Version: W15.68.7.p189
 
+File: mrvl/sd8801_uapsta.bin
+Version: W14.68.36.p204
 
 File: mrvl/usb8801_uapsta.bin
 Version: W14.68.36.p138
 
+File: mrvl/pcieuart8997_combo_v4.bin
+Version: W16.68.1.p179
 
 File: mrvl/pcieusb8997_combo_v4.bin
 Version: W16.68.10.p159.1
 
+File: mrvl/pcie8997_wlan_v4.bin
+Version: W16.68.10.p159.1
 
 File: mrvl/usbusb8997_combo_v4.bin
 Version: W16.68.1.p183
 
+File: mrvl/sdsd8997_combo_v4.bin
+Version: W16.68.1.p197.1
 
+File: mrvl/sdsd8977_combo_v2.bin
+Version: W16.68.1.p195
 
 Licence: Redistributable. See LICENCE.NXP for details.
 Originates from https://github.com/NXP/mwifiex-firmware.git
@@ -254,12 +299,17 @@ File: v4l-cx231xx-avcore-01.fw
 
 Driver: cx23418 - Conexant PCI Broadcast A/V with MPEG encoder
 
+File: v4l-cx23418-apu.fw
+File: v4l-cx23418-cpu.fw
+File: v4l-cx23418-dig.fw
 
 Driver: cx23885 - Conexant PCI Express Broadcast A/V decoder
 
+File: v4l-cx23885-avcore-01.fw
 
 Driver: cx23840 - Conexant sideport Broadcast A/V decoder
 
+File: v4l-cx25840.fw
 
 Licence: Redistributable. See LICENSE.conexant for details.
 --------------------------------------------------------------------------
@@ -277,6 +327,7 @@ Driver: mt7601u - MediaTek MT7601U Wireless MACs
 
 File: mediatek/mt7601u.bin
 Version: 34
+Link: mt7601u.bin -> mediatek/mt7601u.bin
 
 Licence: Redistributable. See LICENCE.ralink_a_mediatek_company_firmware for details
 
@@ -296,6 +347,7 @@ from http://www.mediatek.com/en/downloads1/downloads/
 
 Driver: rt2870sta - Ralink RT2870, RT3070, RT3071 wireless MACs
 
+Link: rt3070.bin -> rt2870.bin
 File: rt3071.bin
 
 Licence: Redistributable. See LICENCE.ralink-firmware.txt for details
@@ -305,6 +357,9 @@ Info: rt3071.bin is a copy of bytes 4096-8191 of rt2870.bin for compatibility.
 
 Driver: usbdux/usbduxfast/usbduxsigma - usbdux data acquisition cards
 
+File: usbdux_firmware.bin
+File: usbduxfast_firmware.bin
+File: usbduxsigma_firmware.bin
 Source: usbdux/
 
 Licence: GPLv2 or later. See GPL-2.0 for details.
@@ -347,46 +402,149 @@ Version: 1.0
 Licence: Redistributable. See LICENCE.ueagle-atm4-firmware for details
 --------------------------------------------------------------------------
 
-Driver: ueagle-atm - Driver for USB ADSL Modems based on Eagle I,II,III
-
-File: ueagle-atm/930-fpga.bin
-File: ueagle-atm/CMVeiWO.bin
-File: ueagle-atm/CMVepFR10.bin
-File: ueagle-atm/DSP9p.bin
-File: ueagle-atm/eagleIII.fw
-File: ueagle-atm/adi930.fw
-File: ueagle-atm/CMVep.bin
-File: ueagle-atm/CMVepFR.bin
-File: ueagle-atm/DSPei.bin
-File: ueagle-atm/CMV9i.bin
-File: ueagle-atm/CMVepES03.bin
-File: ueagle-atm/CMVepIT.bin
-File: ueagle-atm/DSPep.bin
-File: ueagle-atm/CMV9p.bin
-File: ueagle-atm/CMVepES.bin
-File: ueagle-atm/CMVepWO.bin
-File: ueagle-atm/eagleI.fw
-File: ueagle-atm/CMVei.bin
-File: ueagle-atm/CMVepFR04.bin
-File: ueagle-atm/DSP9i.bin
-File: ueagle-atm/eagleII.fw
-Version: 1.1
-
-Licence: Redistributable. See LICENCE.ueagle for details
---------------------------------------------------------------------------
-
 Driver: brcmfmac - Broadcom 802.11n fullmac wireless LAN driver.
 
+File: brcm/bcm4329-fullmac-4.bin
 File: brcm/brcmfmac43236b.bin
+File: brcm/brcmfmac4329-sdio.bin
+File: brcm/brcmfmac4330-sdio.bin
+File: brcm/brcmfmac4334-sdio.bin
+File: brcm/brcmfmac4335-sdio.bin
+File: brcm/brcmfmac43241b0-sdio.bin
+File: brcm/brcmfmac43241b4-sdio.bin
+File: brcm/brcmfmac43241b5-sdio.bin
 File: brcm/brcmfmac43242a.bin
+File: brcm/brcmfmac43143.bin
+File: brcm/brcmfmac43143-sdio.bin
+File: brcm/brcmfmac43430a0-sdio.bin
+File: brcm/brcmfmac4350c2-pcie.bin
+File: brcm/brcmfmac4350-pcie.bin
 File: brcm/brcmfmac43569.bin
+File: brcm/brcmfmac4358-pcie.bin
+File: brcm/brcmfmac43602-pcie.bin
+File: brcm/brcmfmac43602-pcie.ap.bin
+File: brcm/brcmfmac4366b-pcie.bin
+File: brcm/brcmfmac4366c-pcie.bin
+File: brcm/brcmfmac4371-pcie.bin
 
 Licence: Redistributable. See LICENCE.broadcom_bcm43xx for details.
 
 File: brcm/brcmfmac4373.bin
+File: cypress/cyfmac43012-sdio.bin
+Link: brcm/brcmfmac43012-sdio.bin -> ../cypress/cyfmac43012-sdio.bin
+File: cypress/cyfmac43012-sdio.clm_blob
+Link: brcm/brcmfmac43012-sdio.clm_blob -> ../cypress/cyfmac43012-sdio.clm_blob
+File: cypress/cyfmac43340-sdio.bin
+Link: brcm/brcmfmac43340-sdio.bin -> ../cypress/cyfmac43340-sdio.bin
+File: cypress/cyfmac43362-sdio.bin
+Link: brcm/brcmfmac43362-sdio.bin -> ../cypress/cyfmac43362-sdio.bin
+File: cypress/cyfmac4339-sdio.bin
+Link: brcm/brcmfmac4339-sdio.bin -> ../cypress/cyfmac4339-sdio.bin
+File: cypress/cyfmac43430-sdio.bin
+Link: brcm/brcmfmac43430-sdio.bin -> ../cypress/cyfmac43430-sdio.bin
+File: cypress/cyfmac43430-sdio.clm_blob
+Link: brcm/brcmfmac43430-sdio.clm_blob -> ../cypress/cyfmac43430-sdio.clm_blob
+File: cypress/cyfmac43455-sdio.bin
+Link: brcm/brcmfmac43455-sdio.bin -> ../cypress/cyfmac43455-sdio.bin
+File: cypress/cyfmac43455-sdio.clm_blob
+Link: brcm/brcmfmac43455-sdio.clm_blob -> ../cypress/cyfmac43455-sdio.clm_blob
+File: cypress/cyfmac4354-sdio.bin
+Link: brcm/brcmfmac4354-sdio.bin -> ../cypress/cyfmac4354-sdio.bin
+File: cypress/cyfmac4354-sdio.clm_blob
+Link: brcm/brcmfmac4354-sdio.clm_blob -> ../cypress/cyfmac4354-sdio.clm_blob
+File: brcm/brcmfmac4354-sdio.nvidia,p2371-2180.txt
+File: cypress/cyfmac4356-pcie.bin
+Link: brcm/brcmfmac4356-pcie.bin -> ../cypress/cyfmac4356-pcie.bin
+File: cypress/cyfmac4356-pcie.clm_blob
+Link: brcm/brcmfmac4356-pcie.clm_blob -> ../cypress/cyfmac4356-pcie.clm_blob
+File: cypress/cyfmac4356-sdio.bin
+Link: brcm/brcmfmac4356-sdio.bin -> ../cypress/cyfmac4356-sdio.bin
+File: cypress/cyfmac4356-sdio.clm_blob
+Link: brcm/brcmfmac4356-sdio.clm_blob -> ../cypress/cyfmac4356-sdio.clm_blob
+File: cypress/cyfmac43570-pcie.bin
+Link: brcm/brcmfmac43570-pcie.bin -> ../cypress/cyfmac43570-pcie.bin
+File: cypress/cyfmac43570-pcie.clm_blob
+Link: brcm/brcmfmac43570-pcie.clm_blob -> ../cypress/cyfmac43570-pcie.clm_blob
+File: cypress/cyfmac4373-sdio.bin
+Link: brcm/brcmfmac4373-sdio.bin -> ../cypress/cyfmac4373-sdio.bin
+File: cypress/cyfmac4373-sdio.clm_blob
+Link: brcm/brcmfmac4373-sdio.clm_blob -> ../cypress/cyfmac4373-sdio.clm_blob
+File: cypress/cyfmac54591-pcie.bin
+Link: brcm/brcmfmac54591-pcie.bin -> ../cypress/cyfmac54591-pcie.bin
+File: cypress/cyfmac54591-pcie.clm_blob
+Link: brcm/brcmfmac54591-pcie.clm_blob -> ../cypress/cyfmac54591-pcie.clm_blob
 
 Licence: Redistributable. See LICENCE.cypress for details.
 
+File: "brcm/brcmfmac43241b4-sdio.Advantech-MICA-071.txt"
+File: "brcm/brcmfmac43241b4-sdio.Intel Corp.-VALLEYVIEW C0 PLATFORM.txt"
+File: "brcm/brcmfmac4330-sdio.Prowise-PT301.txt"
+File: "brcm/brcmfmac43340-sdio.Insyde-VESPA2.txt"
+File: "brcm/brcmfmac43340-sdio.ASUSTeK COMPUTER INC.-TF103CE.txt"
+File: "brcm/brcmfmac43340-sdio.meegopad-t08.txt"
+File: "brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt"
+File: "brcm/brcmfmac43340-sdio.predia-basic.txt"
+File: "brcm/brcmfmac43362-sdio.ASUSTeK COMPUTER INC.-ME176C.txt"
+File: "brcm/brcmfmac43362-sdio.WC121.txt"
+File: "brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt"
+Link: brcm/brcmfmac43362-sdio.kobo,aura.txt -> brcmfmac43362-sdio.WC121.txt
+Link: brcm/brcmfmac43362-sdio.kobo,tolino-shine2hd.txt -> brcmfmac43362-sdio.WC121.txt
+Link: brcm/brcmfmac43362-sdio.lemaker,bananapro.txt -> brcmfmac43362-sdio.cubietech,cubietruck.txt
+File: "brcm/brcmfmac43430a0-sdio.ilife-S806.txt"
+File: "brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt"
+File: "brcm/brcmfmac43430a0-sdio.ONDA-V80 PLUS.txt"
+File: "brcm/brcmfmac43430-sdio.AP6212.txt"
+Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m3.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.sinovoip,bananapi-m64.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.friendlyarm,nanopi-neo4.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.friendlyarm,nanopi-r1.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.starfive,visionfive-v1.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-a1.txt -> brcmfmac43430-sdio.AP6212.txt
+Link: brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-r0.txt -> brcmfmac43430-sdio.AP6212.txt
+File: "brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt"
+File: "brcm/brcmfmac43430-sdio.ilife-S806.txt"
+File: "brcm/brcmfmac43430-sdio.MUR1DX.txt"
+File: "brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt"
+Link: brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt -> brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+Link: brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.txt -> brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+File: "brcm/brcmfmac43455-sdio.acepc-t8.txt"
+File: "brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt"
+Link: brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt -> brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
+File: "brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt"
+Link: brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+Link: brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+Link: brcm/brcmfmac43455-sdio.raspberrypi,500.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+Link: brcm/brcmfmac43455-sdio.raspberrypi,5-compute-module.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+Link: brcm/brcmfmac43455-sdio.Raspberry\ Pi\ Foundation-Raspberry\ Pi\ 4\ Model\ B.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+Link: brcm/brcmfmac43455-sdio.Raspberry\ Pi\ Foundation-Raspberry\ Pi\ Compute\ Module\ 4.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+File: "brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt"
+File: "brcm/brcmfmac43455-sdio.Radxa-ROCK Pi X.txt"
+File: "brcm/brcmfmac4356-pcie.gpd-win-pocket.txt"
+File: "brcm/brcmfmac4356-pcie.Intel Corporation-CHERRYVIEW D1 PLATFORM.txt"
+File: "brcm/brcmfmac4356-pcie.Xiaomi Inc-Mipad2.txt"
+File: brcm/brcmfmac4356-sdio.AP6356S.txt
+Link: brcm/brcmfmac4356-sdio.firefly,firefly-rk3399.txt -> brcmfmac4356-sdio.AP6356S.txt
+Link: brcm/brcmfmac4356-sdio.friendlyarm,nanopi-m4.txt -> brcmfmac4356-sdio.AP6356S.txt
+Link: brcm/brcmfmac4356-sdio.friendlyarm,nanopc-t4.txt -> brcmfmac4356-sdio.AP6356S.txt
+Link: brcm/brcmfmac4356-sdio.khadas,vim2.txt -> brcmfmac4356-sdio.AP6356S.txt
+Link: brcm/brcmfmac4356-sdio.vamrs,rock960.txt -> brcmfmac4356-sdio.AP6356S.txt
+File: brcm/brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.beagle,am5729-beagleboneai.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.khadas,vim.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,pinenote-v1.1.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,pinenote-v1.2.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,quartz64-a.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,rockpro64-v2.0.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,rockpro64-v2.1.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,soquartz-model-a.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,soquartz-cm4io.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
+Link: brcm/brcmfmac43455-sdio.pine64,soquartz-blade.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 
 Licence: GPLv2. See GPL-2.0 for details.
 --------------------------------------------------------------------------
@@ -440,6 +598,7 @@ File: rtw88/rtw8822b_fw.bin
 File: rtw88/rtw8822c_fw.bin
 File: rtw88/rtw8822c_wow_fw.bin
 File: rtw88/README
+File: rtw88/rtw8723b_fw.bin
 File: rtw88/rtw8723d_fw.bin
 File: rtw88/rtw8821c_fw.bin
 File: rtw88/rtw8703b_fw.bin
@@ -478,6 +637,8 @@ File: rtw89/rtw8922a_fw-1.bin
 File: rtw89/rtw8922a_fw-2.bin
 File: rtw89/rtw8922a_fw-3.bin
 File: rtw89/rtw8922a_fw-4.bin
+File: rtw89/rtw8922d_fw.bin
+File: rtw89/rtw8922ds_fw.bin
 
 Licence: Redistributable. See LICENCE.rtlwifi_firmware.txt for details.
 
@@ -501,6 +662,7 @@ Info: rtl8723bu taken from Realtek driver
       has been extracted into a binary file.
 File: rtlwifi/rtl8723bu_nic.bin
 File: rtlwifi/rtl8723bu_wowlan.bin
+File: rtlwifi/rtl8723bu_ap_wowlan.bin
 
 Info: rtl8192eu taken from Realtek driver
       rtl8192EU_WiFi_linux_v5.11.2.1-18-g8e7df912b.20210527_COEX20171113-0047
@@ -609,6 +771,54 @@ File: ar3k/30000/RamPatch.txt
 Licence: Redistributable. See LICENCE.atheros_firmware for details
 --------------------------------------------------------------------------
 
+Driver: ath6kl - Atheros support for AR6003
+
+File: ath6k/AR6004/hw1.3/fw-3.bin
+File: ath6k/AR6004/hw1.3/bdata.bin
+File: ath6k/AR6004/hw1.2/fw-2.bin
+File: ath6k/AR6004/hw1.2/bdata.bin
+File: ath6k/AR6003/hw1.0/otp.bin.z77
+File: ath6k/AR6003/hw1.0/bdata.SD31.bin
+File: ath6k/AR6003/hw1.0/bdata.SD32.bin
+File: ath6k/AR6003/hw1.0/data.patch.bin
+File: ath6k/AR6003/hw1.0/bdata.WB31.bin
+File: ath6k/AR6003/hw1.0/athwlan.bin.z77
+File: ath6k/AR6003/hw2.1.1/fw-2.bin
+File: ath6k/AR6003/hw2.1.1/fw-3.bin
+File: ath6k/AR6003/hw2.1.1/otp.bin
+File: ath6k/AR6003/hw2.1.1/athwlan.bin
+File: ath6k/AR6003/hw2.1.1/endpointping.bin
+File: ath6k/AR6003/hw2.1.1/bdata.SD31.bin
+File: ath6k/AR6003/hw2.1.1/bdata.SD32.bin
+File: ath6k/AR6003/hw2.1.1/data.patch.bin
+File: ath6k/AR6003/hw2.1.1/bdata.WB31.bin
+File: ath6k/AR6003/hw2.0/otp.bin.z77
+File: ath6k/AR6003/hw2.0/bdata.SD31.bin
+File: ath6k/AR6003/hw2.0/bdata.SD32.bin
+File: ath6k/AR6003/hw2.0/data.patch.bin
+File: ath6k/AR6003/hw2.0/bdata.WB31.bin
+File: ath6k/AR6003/hw2.0/athwlan.bin.z77
+File: ath6k/AR6002/eeprom.data
+File: ath6k/AR6002/eeprom.bin
+File: ath6k/AR6002/athwlan.bin.z77
+File: ath6k/AR6002/data.patch.hw2_0.bin
+
+Licence: Redistributable. See LICENCE.atheros_firmware for details
+--------------------------------------------------------------------------
+
+Driver: ath6kl - Atheros support for AR6003 WiFi-Bluetooth combo module
+
+File: ath6k/AR6003.1/hw2.1.1/athwlan.bin
+File: ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
+File: ath6k/AR6003.1/hw2.1.1/bdata.SD32.bin
+File: ath6k/AR6003.1/hw2.1.1/bdata.WB31.bin
+File: ath6k/AR6003.1/hw2.1.1/data.patch.bin
+File: ath6k/AR6003.1/hw2.1.1/endpointping.bin
+File: ath6k/AR6003.1/hw2.1.1/otp.bin
+
+License: Redistributable. See LICENCE.atheros_firmware for details
+--------------------------------------------------------------------------
+
 Driver: ath6kl - Atheros support for AR3001 WiFi-Bluetooth combo module
 
 File: ar3k/30101coex/ar3kbdaddr.pst
@@ -636,6 +846,8 @@ Licence: Redistributable. See LICENCE.atheros_firmware for details
 
 Driver: carl9170 - Atheros AR9170 802.11 draft-n USB driver
 
+File: carl9170-1.fw
+Version: 1.9.6
 Source: carl9170fw/
 
 Downloaded from http://linuxwireless.org/en/users/Drivers/carl9170
@@ -768,7 +980,7 @@ File: intel/ibt-0291-0291.sfi
 File: intel/ibt-0291-0291.ddc
 File: intel/ibt-0093-0291.sfi
 File: intel/ibt-0093-0291.ddc
-Version: BT_BlazarU_S_REL112962_24.50.26182.112962
+Version: BT_BlazarU_S_REL117936_24.60.26262.117936
 
 File: intel/ibt-0180-0041.sfi
 File: intel/ibt-0180-0041.ddc
@@ -800,12 +1012,12 @@ File: intel/ibt-0190-0291-usb.ddc
 File: intel/ibt-0190-0291-usb.sfi
 File: intel/ibt-0190-0291-pci.ddc
 File: intel/ibt-0190-0291-pci.sfi
-Version: BT_BlazarI_S_REL120290_24.50.26182.120290
+Version: BT_BlazarI_S_REL125325_24.60.26262.125325
 
 File: intel/ibt-1190-01a1-iml.sfi
 File: intel/ibt-1190-01a1-pci.ddc
 File: intel/ibt-1190-01a1-pci.sfi
-Version: BT_BlazarI_S_REL120290_24.50.26182.120290
+Version: BT_BlazarI_S_REL125325_24.60.26262.125325
 
 File: intel/ibt-00a0-01a1-iml.sfi
 File: intel/ibt-00a0-01a1-pci.ddc
@@ -817,7 +1029,7 @@ File: intel/ibt-00a0-0291-pci.ddc
 File: intel/ibt-00a0-0291-pci.sfi
 File: intel/ibt-00a0-0291-usb.ddc
 File: intel/ibt-00a0-0291-usb.sfi
-Version: BT_Scorpius_S_REL88847_24.50.26182.88847
+Version: BT_Scorpius_S_REL94250_24.60.26262.94250
 
 File: intel/ibt-00a0-0041-iml.sfi
 File: intel/ibt-00a0-0041-pci.ddc
@@ -886,6 +1098,7 @@ updated on April 14, 2017.
 Driver: btmtk_usb - Bluetooth USB driver
 
 File: mediatek/mt7650.bin
+Link: mt7650.bin -> mediatek/mt7650.bin
 
 Licence: Redistributable. See LICENCE.ralink_a_mediatek_company_firmware for details
 --------------------------------------------------------------------------
@@ -894,6 +1107,8 @@ Driver: go7007
 
 File: go7007/s2250-1.fw
 File: go7007/s2250-2.fw
+Link: s2250.fw -> go7007/s2250-2.fw
+Link: s2250_loader.fw -> go7007/s2250-1.fw
 
 Licence: Redistributable. See LICENCE.sensoray for details
 
@@ -939,6 +1154,7 @@ License: Redistributable. See LICENCE.moxa for details
 
 Driver: rsi - Redpine Signals Inc 91x driver
 
+File: rsi_91x.fw
 
 File: rsi/rs9113_wlan_qspi.rps
 Version: 1.6.1
@@ -1002,6 +1218,23 @@ File: tdmb_nova_12mhz.inp
 Licence: Redistributable. See LICENCE.siano for details
 --------------------------------------------------------------------------
 
+Driver: xhci-tegra - NVIDIA Tegra XHCI driver
+
+File: nvidia/tegra124/xusb.bin
+Version: v45.46
+
+File: nvidia/tegra210/xusb.bin
+Version: v50.24
+
+File: nvidia/tegra186/xusb.bin
+Version: v55.15
+
+File: nvidia/tegra194/xusb.bin
+Version: v60.06
+
+Licence: Redistributable. See LICENCE.nvidia for details
+--------------------------------------------------------------------------
+
 Driver: atusb - ATUSB IEEE 802.15.4 transceiver driver
 
 File: atusb/atusb-0.2.dfu
@@ -1017,6 +1250,8 @@ Licence: GPLv2 or later. See GPL-2.0 for details.
 
 Driver: btmtk - MediaTek Bluetooth Driver
 
+File: mediatek/mt7622pr2h.bin
+Version: 20180621204904
 File: mediatek/mt7668pr2h.bin
 Version: 20180517181834
 # Note: explicitly commented out, since it's duplicated further down
@@ -1029,6 +1264,8 @@ Licence: Redistributable. See LICENCE.mediatek for details.
 Driver: mt76x0 - MediaTek MT76x0 Wireless MACs
 
 File: mediatek/mt7610u.bin
+File: mediatek/mt7610e.bin
+Version: 2.6
 File: mediatek/mt7650e.bin
 Version: 1.0.07-b370
 
@@ -1057,6 +1294,16 @@ File: mediatek/mt7663pr2h_rebb.bin
 Version: 7663e2-1802-19091404338b809
 File: mediatek/mt7663_n9_rebb.bin
 Version: 7663mp1827-20190914043434
+
+Licence: Redistributable. See LICENCE.mediatek for details.
+--------------------------------------------------------------------------
+
+Driver: mt7902 - MediaTek MT7902 Wireless MACs
+
+File: mediatek/WIFI_MT7902_patch_mcu_1_1_hdr.bin
+Version: 20251212032046a
+File: mediatek/WIFI_RAM_CODE_MT7902_1.bin
+Version: 20251212032127
 
 Licence: Redistributable. See LICENCE.mediatek for details.
 --------------------------------------------------------------------------
@@ -1107,6 +1354,8 @@ Licence: Redistributable. See LICENCE.mediatek for details.
 
 Driver: mt7922 - MediaTek MT7922 Wireless MACs
 
+File: mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin
+Version: 20260605203307a
 File: mediatek/WIFI_RAM_CODE_MT7922_1.bin
 Version: 20260605203411
 

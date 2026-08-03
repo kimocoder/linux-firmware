@@ -96,6 +96,8 @@ def main():
             "contrib/templates/rpm.spec",
             "copy-firmware.sh",
             "dedup-firmware.sh",
+            "update_firmware.py",
+            ".github/workflows/update-firmware.yml",
         ]
     )
     known_prefixes = set(name for name in whence_list if name.endswith("/"))
@@ -109,6 +111,7 @@ def main():
             "contrib/process_linux_firmware.py",
             "copy-firmware.sh",
             "dedup-firmware.sh",
+            "update_firmware.py",
         ]
     )
 
