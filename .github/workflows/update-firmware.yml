@@ -71,6 +71,7 @@ jobs:
         if: steps.git-check.outputs.changes_detected == 'true' && github.event.inputs.dry_run != 'true'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.PAT_TOKEN }}
           commit-message: |
             firmware: Update & sync firmwares from upstream linux-firmware
 
